@@ -1,0 +1,28 @@
+<ion-app>
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="menu"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+          Chats
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content [scrollEvents]="true">
+      <ion-list style="margin-top: 25px; justify-content: center;">
+        <ion-item *ngFor="let item of items">
+          {{ item }}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+
+    <ion-footer [translucent]="true">
+      <ion-toolbar>
+        <ion-title>
+          Made by harold illert 👽
+        </ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-app>

@@ -1,0 +1,32 @@
+
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-title>
+          Menu
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content [scrollEvents]="true">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+      <ion-row style="margin-top: 80%;">
+        <ion-title style="text-align: center; font-weight: bold;">Faça sua escolha...</ion-title>
+        <ion-col size="6">
+          <ion-button color="tertiary" expand="full" size="large" (click)="navigateToPage1()">Chat</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button class="chats-button" color="tertiary" expand="full" size="large" (click)="navigateToPage2()">Chats anteriores</ion-button>
+        </ion-col>
+      </ion-row>
+      </div>
+    </ion-content>
+
+    <ion-footer [translucent]="true">
+      <ion-toolbar>
+        <ion-title>
+          Made by harold illert 👽
+        </ion-title>
+      </ion-toolbar>
+    </ion-footer>
+
+

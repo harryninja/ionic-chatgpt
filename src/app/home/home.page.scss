@@ -1,0 +1,92 @@
+ion-content {
+  height: 76%;
+}
+
+.chat-item {
+  --padding-bottom: 10px;
+  &.bot{
+    --background: transparent;
+  }
+}
+
+.text-box-item {
+  padding-top: 3px;
+  --background: var(--ion-color-light)
+}
+
+.chat-icon {
+  font-size: 23px;
+  color: white;
+}
+
+ion-badge {
+  padding: 15px;
+}
+
+.w-space {
+  white-space: pre-line;
+}
+
+.submit-icon {
+  font-size: 25px;
+}
+
+.empty {
+  text-align: center;
+  padding-top: 10vh;
+  opacity: 30%;
+
+  ion-icon {
+    font-size: 120px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: end;
+  gap: 20px;
+  width: 100vw;
+  bottom: 40px;
+  position: fixed;
+  z-index: 1;
+  padding: 20px;
+}
+.chatToggle {
+  margin-bottom: 100px;
+  width: 70px;
+  height: 70px;
+  background: blueviolet;
+  border-radius: 100%;
+  cursor: pointer;
+  color: white;
+}
+.chatWindow {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 20px;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.chatWindow::-webkit-scrollbar {
+  display: none;
+}
+
+.bot {
+  background: #8a2be2;
+}
+
+.me {
+  background: #6824a8;
+}
+
+@media (min-width: 600px) {
+  .container {
+      width: 400px;
+      right: 70px;
+  }
+}
